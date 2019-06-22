@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 81px;
+  &__title {
+    color: #000000;
+    font-size: 36px;
+    font-weight: 700;
+    margin-right: 58px;
+  }
+}
+
+.show {
+  &-table {
+    width: 36px;
+    height: 36px;
+    margin-right: 36px;
+  }
+  &-list {
+    width: 42px;
+    height: 27px;
+  }
+}
