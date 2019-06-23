@@ -65,6 +65,34 @@ const reducer = (state = initialState, action) => {
         ...state,
         endDragOption: action.option
       };
+    case 'END_DROP_ACTION':
+      if (state.endDragOption && state.startDragOption !== state.endDragOption) {
+        const startOption = state.startDragOption;
+        const endOption = state.endDragOption;
+
+        const draggedFromArray = state.options[startOption].slice(0);
+        const draggetTask = draggedFromArray.filter(
+          task => task.id === action.id
+        )[0];
+        const updatedFromArray = draggedFromArray.filter(
+          task => task.id !== action.id
+        );
+        const draggedToArray = state.options[endOption].slice(0);
+        draggedToArray.unshift(draggetTask);
+        const result = {
+          ...state,
+          options: {
+            ...state.options,
+            [startOption]: updatedFromArray,
+            [endOption]: draggedToArray
+          },
+          startDragOption: null,
+          endDragOption: null
+        };
+        return result;
+      } else {
+        return state;
+      }
     default:
       return state;
   }
