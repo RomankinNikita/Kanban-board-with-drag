@@ -11,8 +11,6 @@ const Option = ({ option, setEndDragOption, endDragOption }) => {
   useEffect(() => {
     if (endDragOption !== option) {
       toggleDragStatus(false);
-      console.log(option);
-      
     }
   }, [endDragOption, option]);
 
