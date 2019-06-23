@@ -1,0 +1,39 @@
+.task {
+  width: 425px;
+  &__title {
+    color: #5e5b5b;
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+  &__underline {
+    width: 306px;
+    height: 1px;
+    background-color: #a7a7a7;
+    margin-bottom: 21px;
+  }
+  &__name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+}
+
+.date {
+  &__container {
+    display: flex;
+    margin-bottom: 24px;
+  }
+  &__item {
+    width: 88px;
+    height: 29px;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:nth-of-type(1) {
+      margin-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.table {
+  &__item {
+    width: 330px;
+    height: 172px;
+    box-shadow: 0 5px 15px 1px rgba(126, 126, 126, 0.22);
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: relative;
+    margin-bottom: 20px;
+    padding-top: 14px;
+    padding-left: 13px;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.03);
+      cursor: pointer;
+    }
+  }
+  &__title {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 17px;
+    margin-bottom: 20px;
+  }
+}
+
+.period {
+  width: 207px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.performer__container {
+  margin-top: 17px;
+  display: flex;
+}
+
+.more__icon {
+  width: 32px;
+  height: 30px;
+  position: absolute;
+  top: 5.5px;
+  right: 18px;
+}

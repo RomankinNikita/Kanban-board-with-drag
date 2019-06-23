@@ -1,0 +1,26 @@
+.option:not(:last-of-type) {
+  margin-right: 120px;
+}
+
+.option__title {
+  color: #000000;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  background-color: #d1d1d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.plus {
+  width: 31px;
+  height: 31px;
+}
